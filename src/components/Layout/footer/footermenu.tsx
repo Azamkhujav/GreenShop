@@ -7,10 +7,8 @@ import Image from '../../../assets/icons/image 16.png'
 export default function FooterMenu() {
   return (
     <div className=" py-[18px] sm:mb-0 mb-[100px]">
-
       <div className="mx-auto px-6 flex justify-between text-gray-700 flex-wrap gap-[20px]">
         <div>
-          
           <h4 className="font-semibold mb-2">My Account</h4>
           <ul>
             <li>My Account</li>

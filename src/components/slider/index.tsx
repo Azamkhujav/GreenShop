@@ -3,12 +3,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import mainBannerright from "../../assets/icons/mainbanner.png";
+import mainBannerrightMob from "../../assets/icons/mobPlant.png";
+
 export default function Slider() {
   return (
     <Swiper
       pagination={true}
       modules={[Pagination]}
-      className="mySwiper mt-[20px] mb-[40px] bg-[#F5F5F580] sm:rounded-none rounded-[30px]"
+      className="mySwiper mt-[20px] mb-[40px] bg-[#F5F5F580] sm:h-auto h-[200px] sm:rounded-none rounded-[30px]"
     >
       <SwiperSlide>
         <div className="w-full flex  md:flex-row justify-between items-center px-4 md:px-12 lg:px-20">
@@ -27,7 +29,8 @@ export default function Slider() {
             We are an online plant shop offering a wide range 
             </p>
           </div>
-          <img className="h-[213px]  sm:h-[300px] md:h-[400px] lg:h-[450px] object-contain" src={mainBannerright} alt="Banner" />
+          <img className="sm:block hidden h-[213px]  sm:h-[300px] md:h-[400px] lg:h-[450px] object-contain" src={mainBannerright} alt="Banner" />
+          <img className="sm:hidden block" src={mainBannerrightMob} alt="Banner" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
